@@ -2,11 +2,7 @@
 
 A sophisticated implementation of Model Predictive Control for quadcopter trajectory tracking with complete state-space analysis, constraint handling, and real-time optimization.
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Status](https://img.shields.io/badge/Status-Production-brightgreen.svg)
-
-## 🚁 Overview
+## Overview
 
 This project implements a **nonlinear Model Predictive Controller** for autonomous quadcopter trajectory tracking. The system uses:
 
@@ -17,13 +13,13 @@ This project implements a **nonlinear Model Predictive Controller** for autonomo
 
 ### Key Features
 
-✅ **State-Space Formulation**: Complete 12-DOF quadcopter model  
-✅ **MPC with Constraints**: Real-time optimization with hard constraints  
-✅ **Trajectory Generation**: Multiple reference trajectory options  
-✅ **Visualization**: Comprehensive plots and 3D trajectory rendering  
-✅ **Production Ready**: Well-documented, modular, extensible code  
+**State-Space Formulation**: Complete 12-DOF quadcopter model  
+**MPC with Constraints**: Real-time optimization with hard constraints  
+**Trajectory Generation**: Multiple reference trajectory options  
+**Visualization**: Comprehensive plots and 3D trajectory rendering  
+**Production Ready**: Well-documented, modular, extensible code  
 
-## 📐 Mathematical Background
+## Mathematical Background
 
 ### State Vector (12 states)
 ```
@@ -56,7 +52,7 @@ subject to:
     |φ|, |θ| ≤ 30°                   [angle limits]
 ```
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 quadcopter_mpc/
@@ -74,7 +70,7 @@ quadcopter_mpc/
 └── docs/                        # Additional documentation (optional)
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -145,7 +141,7 @@ The simulation generates **8 high-quality plots** in the `graphs/` directory:
 7. `tracking_error.png` - Position error norm over time
 8. `trajectory_top_view.png` - X-Y plane trajectory view
 
-## 📊 Example Results
+## Example Results
 
 ### Circle Trajectory Tracking
 - **Mean tracking error**: ~0.02m
@@ -158,7 +154,7 @@ The simulation generates **8 high-quality plots** in the `graphs/` directory:
 - **Computation time**: <50ms per MPC iteration (typical)
 - **Constraint satisfaction**: 100%
 
-## 🔧 Customization
+## Customization
 
 ### Modify MPC Parameters
 
@@ -206,7 +202,7 @@ self.L = 0.25     # Arm length (m)
 self.Ixx = 5e-3   # Moment of inertia (kg·m²)
 ```
 
-## 📚 Technical Details
+## Technical Details
 
 ### Dynamics Model
 
@@ -238,17 +234,17 @@ For MPC efficiency, the dynamics are linearized around hover:
 - **Problem type**: Quadratic Program (QP) with linear constraints
 - **Warm start**: Enabled for faster convergence
 
-## 🎓 For Students & Researchers
+## For Students & Researchers
 
 This project is ideal for:
 
 ### Learning Objectives
-- ✅ State-space representation of dynamic systems
-- ✅ Model Predictive Control theory and implementation
-- ✅ Convex optimization for real-time control
-- ✅ Nonlinear dynamics and linearization
-- ✅ Constraint handling in optimization
-- ✅ Python scientific computing (NumPy, SciPy, CVXPY)
+- State-space representation of dynamic systems
+- Model Predictive Control theory and implementation
+- Convex optimization for real-time control
+- Nonlinear dynamics and linearization
+- Constraint handling in optimization
+- Python scientific computing (NumPy, SciPy, CVXPY)
 
 ### Extensions & Projects
 1. **Add disturbance rejection** (wind, sensor noise)
@@ -260,7 +256,7 @@ This project is ideal for:
 7. **Robust MPC** for parameter uncertainty
 8. **Learning-based MPC** with neural network models
 
-## 📝 References
+## References
 
 ### Control Theory
 - **MPC**: J. B. Rawlings, D. Q. Mayne, "Model Predictive Control: Theory and Design"
@@ -270,7 +266,7 @@ This project is ideal for:
 - **CVXPY**: Diamond & Boyd, "CVXPY: A Python-Embedded Modeling Language for Convex Optimization"
 - **OSQP**: Stellato et al., "OSQP: An Operator Splitting Solver for Quadratic Programs"
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -289,22 +285,19 @@ This project is ideal for:
 - Use sparse matrices (already implemented)
 - Consider using faster solvers (GUROBI, MOSEK)
 
-## 📄 License
+## License
 
 MIT License - Feel free to use for academic and commercial projects.
 
-## 👤 Author
+## Author
 
-Created for demonstration of advanced control techniques in robotics and aerospace applications.
+**Priyanshu Nayak**
+B.Tech Electrical Engineering
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - CVXPY and OSQP development teams
 - Quadcopter dynamics based on standard aerospace models
 - Inspired by research in autonomous aerial vehicles
 
----
 
-**For questions, issues, or contributions, please open an issue or pull request.**
-
-⭐ Star this repo if you found it helpful!
