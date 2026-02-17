@@ -294,10 +294,5 @@ MIT License - Feel free to use for academic and commercial projects.
 **Priyanshu Nayak**
 B.Tech Electrical Engineering
 
-## Acknowledgments
-
-- CVXPY and OSQP development teams
-- Quadcopter dynamics based on standard aerospace models
-- Inspired by research in autonomous aerial vehicles
 
 
